@@ -58,7 +58,7 @@ public class LoopingTask {
 		int fact=0;
 		while(0<number) {
 			int rem=number%10;
-			fact=fact+factorial(rem);
+			fact=fact+factorial(rem);//call factorial method
 			number=number/10;
 		}
 		if(original==fact) {
@@ -149,18 +149,11 @@ public class LoopingTask {
 	}
 	private void allFactorials() {
 		// TODO Auto-generated method stub
-		int max=5;
-		while(1<=max) {
-		int fact=1;
-		int no=1;
-		while(no<=fact) {
-			fact=fact*fact;
-			no=no+1;
+		int fact=5;
+		while(0<fact) {
+			System.out.println(factorial(fact));//call factorial method
+			fact=fact-1;
 		}
-		System.out.println(fact);
-		max=max-1;
-		}
-		//System.out.println(count);
 	}
 	private int factorial(int fact) {
 		// TODO Auto-generated method stub
@@ -170,7 +163,7 @@ public class LoopingTask {
 			count=count*fact;
 			fact=fact-1;
 		}
-		System.out.println(count);
+		//System.out.println(count);
 		return count;
 	}
 	private void palindrome() {
