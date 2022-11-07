@@ -49,7 +49,46 @@ public class LoopingTask {
 		//loop.powerOfSquare();
 		//loop.amstrongNo();
 		//loop.neonNumber();
-		loop.strongNo();
+		//loop.strongNo();
+		//loop.find1to100PrimeNo();
+		loop.find100to1000AmstrongNo();
+	}
+	private void find100to1000AmstrongNo() {
+		// TODO Auto-generated method stub
+		int number=100;
+		while(number<1000) {
+			int copy=number;
+			int result=0;
+			while(0<copy) {
+				int rem=copy%10;
+				result=result+(rem*rem*rem);
+				copy=copy/10;
+			}
+			if(number==result) {
+				System.out.println(number);
+			}
+			number=number+1;
+		}
+	}
+	private void find1to100PrimeNo() {
+		// TODO Auto-generated method stub
+		int number=100;
+		int div1=2;
+		while(div1<number) {
+			int div2=2;
+			int count=0;
+			while(div2<div1) {
+				if(div1%div2==0) {
+					count=count+1;
+				}
+				div2=div2+1;
+			}
+			if(count==0) {
+				System.out.print(div1+" ");
+			}
+			div1=div1+1;
+		}
+		
 	}
 	private void strongNo() {
 		// TODO Auto-generated method stub
