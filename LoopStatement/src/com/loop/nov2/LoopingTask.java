@@ -51,7 +51,87 @@ public class LoopingTask {
 		//loop.neonNumber();
 		//loop.strongNo();
 		//loop.find1to100PrimeNo();
-		loop.find100to1000AmstrongNo();
+		//loop.find100to1000AmstrongNo();
+		//loop.findFirstNprimeNo();
+		//loop.findSquareRoot();
+		//loop.smallestDivisor();
+		//loop.greatestDivisor();
+		loop.samePowerOfNumber();
+	}
+	private void samePowerOfNumber() {
+		// TODO Auto-generated method stub
+		int number=1;
+		while (number < 5) {
+			int count = 0;
+			int result = 1;
+			while (count < number) {
+
+				result = result * number;
+				count = count + 1;
+			}
+			System.out.println(result);
+			number=number+1;
+		}
+	}
+	private void greatestDivisor() {
+		// TODO Auto-generated method stub
+		int number=100;
+		int div=number/2;
+		while(div>=2) {
+			if(number%div==0) {
+				System.out.println(div);
+				break;
+			}
+			div=div+1;
+		}
+	}
+	private void smallestDivisor() {
+		// TODO Auto-generated method stub
+		int number=100;
+		int div=2;
+		while(div<number) {
+			if(number%div==0) {
+				System.out.println(div);
+				break;
+			}
+			div=div+1;
+		}
+		
+	}
+	private void findSquareRoot() {
+		// TODO Auto-generated method stub
+		int number=100;
+		int div=2;
+		while(div<=number) {		//while(div<=number/2)
+			
+			if(number/div==div) {
+				System.out.println(div);
+			}
+			div=div+1;
+		}
+		
+	}
+	private void findFirstNprimeNo() {
+		// TODO Auto-generated method stub
+		int number = 2;
+		int primeCount=0;
+		while (primeCount < 10) {
+			int div = 2;
+			int count = 0;
+			while (div < number) {
+
+				if (number % div == 0) {
+					count = count + 1;
+					break;
+				}
+				div = div + 1;
+			}
+			if (count == 0) {
+				System.out.print(div+" ");
+				primeCount=primeCount+1;
+			} 
+			number=number+1;
+		}
 	}
 	private void find100to1000AmstrongNo() {
 		// TODO Auto-generated method stub
@@ -75,7 +155,7 @@ public class LoopingTask {
 		int number=100;
 		int div1=2;
 		while(div1<number) {
-			int div2=2;
+			int div2=div1;
 			int count=0;
 			while(div2<div1) {
 				if(div1%div2==0) {
