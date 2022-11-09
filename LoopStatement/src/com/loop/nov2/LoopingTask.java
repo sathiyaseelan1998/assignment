@@ -58,7 +58,35 @@ public class LoopingTask {
 		//loop.greatestDivisor();
 		//loop.samePowerOfNumber();
 		//loop.perfectNumber();
-		loop.spyNumber();
+		//loop.spyNumber();
+		//loop.powerOfNumber(2,5);
+		loop.binaryToDecimal();
+	}
+	private void binaryToDecimal() {
+		// TODO Auto-generated method stub
+		int binary=111;
+		int power=0;
+		int base=2;
+		int result=0;
+		while(binary>0) {
+			int rem=binary%10;
+			rem=rem*powerOfNumber(base, power);
+			result=result+rem;
+			power=power+1;
+			binary=binary/10;
+		}
+		System.out.println(result);
+	}
+	private int powerOfNumber(int base,int power) {
+		// TODO Auto-generated method stub
+		int result=1;
+		while(power>0) {
+			
+			result=result*base;
+			power=power-1;
+		}
+	//	System.out.println(result);
+		return result;
 	}
 	private void spyNumber() {
 		// TODO Auto-generated method stub
