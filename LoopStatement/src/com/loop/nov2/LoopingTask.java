@@ -56,7 +56,49 @@ public class LoopingTask {
 		//loop.findSquareRoot();
 		//loop.smallestDivisor();
 		//loop.greatestDivisor();
-		loop.samePowerOfNumber();
+		//loop.samePowerOfNumber();
+		//loop.perfectNumber();
+		loop.spyNumber();
+	}
+	private void spyNumber() {
+		// TODO Auto-generated method stub
+		int number=132;
+		int copy=number;
+		int sum=0;
+		int multiple=1;
+		while(0<number) {
+			int rem=number%10;
+			sum=sum+rem;
+			multiple=multiple*rem;
+			number=number/10;
+		}
+		if(sum==multiple) {
+			System.out.println(copy+" is spy number");
+		}
+		else{
+			System.out.println(copy+" is not spy number");
+		}
+		
+	}
+	private void perfectNumber() {
+		// TODO Auto-generated method stub
+		int number=6;
+		int div=1;
+		int sum=0;
+		while(div<number) {
+			
+			if(number%div==0) {
+				sum=sum+div;
+			}
+			div=div+1;
+		}
+		if(number==sum) {
+			System.out.println(number+" is perfet number");
+		}
+		else{
+			System.out.println(number+" is not perfet number");
+		}
+		
 	}
 	private void samePowerOfNumber() {
 		// TODO Auto-generated method stub
