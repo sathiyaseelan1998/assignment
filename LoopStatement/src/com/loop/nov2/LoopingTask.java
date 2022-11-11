@@ -60,7 +60,87 @@ public class LoopingTask {
 		//loop.perfectNumber();
 		//loop.spyNumber();
 		//loop.powerOfNumber(2,5);
-		loop.binaryToDecimal();
+		//loop.binaryToDecimal();
+		//loop.decimalToBinary(7);
+		//loop.swappingNo();
+		//loop.swappingNoWithoutThirdVariable();
+		//loop.fibonacii(25);
+		//loop.findLMC();
+		loop.singleDegit(24567);
+	}
+	private void singleDegit(int number) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		while(0<number) {
+			int rem=number%10;
+			sum=sum+rem;
+			number=number/10;
+		}
+		if(sum>9) {
+			singleDegit(sum);
+		}
+		else {
+			System.out.println(sum);
+		}
+		
+	}
+	private void findLMC() {
+		// TODO Auto-generated method stub
+		int no1=3;
+		int no2=6;
+		int max=no1>no2?no1:no2;
+		while(true) {
+			if(max%no1==0 && max%no2==0) {
+				System.out.println(max);
+				break;
+			}
+			max=max+1;
+		}
+		
+	}
+	private void fibonacii(int fibo) {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		int third=0;
+		while(first<fibo) {
+			
+			System.out.print(first);
+			third=first+second;
+			first=second;
+			second=third;
+		}
+		
+	}
+	private void swappingNoWithoutThirdVariable() {
+		// TODO Auto-generated method stub
+		int no1=25;
+		int no2=32;
+		no1=no1+no2;
+		no2=no1-no2;
+		no1=no1-no2;
+		System.out.println(no1+"--------"+no2);
+
+	}
+	private void swappingNo() {
+		// TODO Auto-generated method stub
+		int no1=27;
+		int no2=37;
+		int add=no1+no2;
+		no2=add-no2;
+		no1=add-no1;
+		System.out.println(no1+"--------"+no2);
+		
+	}
+	private void decimalToBinary(int number) {
+		// TODO Auto-generated method stub
+		String binary="";
+		while(0<number) {
+			int rem=number%2;
+			binary=rem+binary;
+			number=number/2;
+		}
+		System.out.println(binary);
 	}
 	private void binaryToDecimal() {
 		// TODO Auto-generated method stub
