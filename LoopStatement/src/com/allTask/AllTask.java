@@ -26,7 +26,150 @@ public class AllTask {
 		//at.print12345();
 		//at.print1To15();
 		//at.multipleOf5();
-		at.multipleOf5singleLoop();
+		//at.multipleOf5singleLoop();
+		//at.factorial(10);
+		//at.binaryToOctal();
+		//at.fibonacii5to80();
+		//at.findLCM(3,6);
+		//at.greatestDivisor();
+		//at.smallestDivisor();
+		//at.greatestAndsmallDivisor();
+		//at.palindrome(1221);
+		at.print_101010();
+	}
+
+	private void print_101010() {
+		// TODO Auto-generated method stub
+		int count=1;
+		while (count <= 4) {
+			int no = 1;
+			while (no >= 0) {
+				System.out.print(no + " ");
+				no--;
+			}
+			count++;
+		}
+	}
+
+	private void palindrome(int no) {
+		// TODO Auto-generated method stub
+		int copy=no;
+		int reverse=0;
+		while(copy>0) {
+			int rem=copy%10;
+			reverse=(reverse*10)+rem;
+			copy=copy/10;
+		}
+		if(no==reverse) {
+			System.out.println(no+" is palindrome");
+		}
+		else{
+			System.out.println(no+" is not  palindrome");
+		}
+		
+	}
+
+	private void greatestAndsmallDivisor() {
+		// TODO Auto-generated method stub
+		int no=300;
+		int div=2;
+		while(div<no) {
+			if(no%div==0) {
+				System.out.println("smallest divisor "+div);
+				div=no/2;
+				if(div>2) {
+					System.out.println("greatest divisor "+div);
+					break;
+				}
+			}
+			
+			div++;
+		}
+	}
+
+	private void smallestDivisor() {
+		// TODO Auto-generated method stub
+		int no=15;
+		int div=2;
+		while(div<no) {
+			if(no%div==0) {
+				System.out.println(div);
+				break;
+			}
+			div++;
+		}
+	}
+
+	private void greatestDivisor() {
+		// TODO Auto-generated method stub
+		int no=100;
+		int div=no/2;
+		while(div>2) {
+			if(no%div==0) {
+				System.out.println(div);
+				break;
+			}
+			div++;
+		}
+	}
+
+	private  void findLCM(int no1, int no2) {
+		// TODO Auto-generated method stub
+		int max=no1>no2?no1:no2;
+		while(true) {
+			if(max%no1==0 && max%no2==0) {
+				System.out.println(max);
+				break;
+			}
+			max++;
+		}
+	}
+
+	private void fibonacii5to80() {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		int third=0;
+		while(first<80) {
+			
+			if(first>5 && first<80) {
+				System.out.print(first+" ");
+			}
+			third=first+second;
+			first=second;
+			second=third;
+		}
+		
+	}
+
+	private void binaryToOctal() {
+		// TODO Auto-generated method stub
+		int binary=1010101;
+		int decimal=binaryToDecimal(binary);
+		String octal=" ";
+		while(0<decimal) {
+			int rem=decimal%8;
+			octal=rem+octal;
+			decimal=decimal/8;
+		}
+		System.out.println(binary+" to octal no "+octal);
+	}
+
+	private void factorial(int no) {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		int third=0;
+		while(first<no) {
+			//System.out.print(first+" ");
+			third=first+second;
+			first=second;
+			second=third;
+			if(first>2 && first<10) {
+				primeOrNot(first);
+			}
+		}
+		
 	}
 
 	private void multipleOf5singleLoop() {
@@ -37,7 +180,7 @@ public class AllTask {
 			int result=no*table;
 			System.out.print(result+" ");
 			result=result-no;
-			System.out.println(result+" ");
+			System.out.print(result+" ");
 			
 			no++;
 		}
@@ -161,7 +304,7 @@ public class AllTask {
 		}
 	}
 
-	private void binaryToDecimal(int binary) {
+	private int binaryToDecimal(int binary) {
 		// TODO Auto-generated method stub
 		int decimal=0;
 		int power=0;
@@ -172,7 +315,7 @@ public class AllTask {
 			binary=binary/10;
 		}
 		System.out.println(decimal);
-		
+		return decimal;
 	}
 
 	private void powerOfSameNo(int no, int power) {
