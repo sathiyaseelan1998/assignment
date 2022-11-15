@@ -66,7 +66,19 @@ public class LoopingTask {
 		//loop.swappingNoWithoutThirdVariable();
 		//loop.fibonacii(25);
 		//loop.findLMC();
-		loop.singleDegit(24567);
+		//loop.singleDegit(24567);
+		loop.fibonaciiWithoutThirdVariable();
+	}
+	private void fibonaciiWithoutThirdVariable() {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		while(first<25) {
+			System.out.print(first);
+			//first=second;
+			second=second-first;
+			first=first+second;
+		}
 	}
 	private void singleDegit(int number) {
 		// TODO Auto-generated method stub
