@@ -55,7 +55,7 @@ public class LoopingTask {
 		//loop.findFirstNprimeNo();
 		//loop.findSquareRoot();
 		//loop.smallestDivisor();
-		//loop.greatestDivisor();
+		loop.greatestDivisor();
 		//loop.samePowerOfNumber();
 		//loop.perfectNumber();
 		//loop.spyNumber();
@@ -67,7 +67,7 @@ public class LoopingTask {
 		//loop.fibonacii(25);
 		//loop.findLMC();
 		//loop.singleDegit(24567);
-		loop.fibonaciiWithoutThirdVariable();
+		//loop.fibonaciiWithoutThirdVariable();
 	}
 	private void fibonaciiWithoutThirdVariable() {
 		// TODO Auto-generated method stub
@@ -237,9 +237,9 @@ public class LoopingTask {
 	}
 	private void greatestDivisor() {
 		// TODO Auto-generated method stub
-		int number=100;
+		int number=70;
 		int div=number/2;
-		while(div>=2) {
+		while(div>2) {
 			if(number%div==0) {
 				System.out.println(div);
 				break;

@@ -73,9 +73,13 @@ public class AllTask {
 		// TODO Auto-generated method stub
 		int no=300;
 		int div=2;
+		boolean identity=false;
+		int small=0;
 		while(div<no) {
 			if(no%div==0) {
-				System.out.println("smallest divisor "+div);
+				small=div;
+				identity=true;
+				//System.out.println("smallest divisor "+div);
 				div=no/2;
 				if(div>2) {
 					System.out.println("greatest divisor "+div);
