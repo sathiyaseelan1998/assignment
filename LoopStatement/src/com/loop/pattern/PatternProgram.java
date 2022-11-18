@@ -22,9 +22,24 @@ public class PatternProgram {
 		//pp.pattern13();
 		//pp.pattern14();
 		//pp.pattern15();
+		//-------------
 		//pp.pattern16();
 		//pp.pattern17();
-		pp.pattern18();
+		//pp.pattern18();
+		pp.pattern19();
+	}
+	private void pattern19() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++) {
+			for(int col=1;col<=5-row;col++) {
+				System.out.print(""+" ");
+			}
+			for(int col=row;col>=1;col--) {
+				System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+		
 	}
 	private void pattern18() {
 		// TODO Auto-generated method stub
