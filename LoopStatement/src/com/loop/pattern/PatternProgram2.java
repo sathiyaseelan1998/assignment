@@ -15,8 +15,8 @@ public class PatternProgram2 {
 		//pp.pattern8();
 		//pp.pattern9();
 		//----------------
-		//pp.pattern10();
-		pp.pattern11();
+		pp.pattern10();
+		//pp.pattern11();
 	}
 	private void pattern11() {
 		// TODO Auto-generated method stub
