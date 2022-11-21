@@ -19,7 +19,7 @@ public class ScannerClass {
 		//s.factorial();
 		//s.allFactorial();
 		//s.powerOfSquare();
-		s.powerOfCube();
+		//s.powerOfCube();
 	}
 	private void powerOfCube() {
 		// TODO Auto-generated method stub
