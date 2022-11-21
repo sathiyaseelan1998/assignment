@@ -17,7 +17,40 @@ public class ScannerClass {
 		//s.smallestCommonDivisor();
 		//s.palindrome();
 		//s.factorial();
-		s.allFactorial();
+		//s.allFactorial();
+		//s.powerOfSquare();
+		s.powerOfCube();
+	}
+	private void powerOfCube() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Starting Number");
+		int no1=sc.nextInt();
+		System.out.println("Enter Ending Number");
+		int no2=sc.nextInt();
+		int result=0;
+		while(no1<=no2) {
+			result=no1*no1;
+			System.out.print(result+"  ");
+			no1++;
+		}
+		
+	}
+
+	private void powerOfSquare() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Starting Number");
+		int no1=sc.nextInt();
+		System.out.println("Enter Ending Number");
+		int no2=sc.nextInt();
+		int result=0;
+		while(no1<=no2) {
+			result=no1*no1*no1;
+			System.out.print(result+"  ");
+			no1++;
+		}
+		
 	}
 
 	private void allFactorial() {
