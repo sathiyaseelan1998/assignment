@@ -33,7 +33,7 @@ public class ScannerClass {
 
 		for(int row=1;row<=rows;row++) {
 			for(int col=1;col<=row;col++) {
-				System.out.print("* ");
+				System.out.print("*");
 			}
 			System.out.println();
 		}
