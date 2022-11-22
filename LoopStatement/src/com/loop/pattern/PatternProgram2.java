@@ -5,7 +5,7 @@ public class PatternProgram2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PatternProgram2 pp=new PatternProgram2();
-		//pp.pattern1();
+		pp.pattern1();
 		//pp.pattern2();
 		//pp.pattern3();
 		//pp.pattern4();
@@ -15,8 +15,8 @@ public class PatternProgram2 {
 		//pp.pattern8();
 		//pp.pattern9();
 		//----------------
-		pp.pattern10();
-		//pp.pattern11();
+		//pp.pattern10();
+		pp.pattern11();
 	}
 	private void pattern11() {
 		// TODO Auto-generated method stub

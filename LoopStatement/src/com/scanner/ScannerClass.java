@@ -20,6 +20,63 @@ public class ScannerClass {
 		//s.allFactorial();
 		//s.powerOfSquare();
 		//s.powerOfCube();
+		//s.pattern1();
+		//s.pattern2();
+		//s.pattern3();
+		s.pattern4();
+	}
+	private void pattern4() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many row you want?");
+		int rows=sc.nextInt();
+
+		for(int row=1;row<=rows;row++) {
+			for(int col=1;col<=row;col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	private void pattern3() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many row you want?");
+		int rows=sc.nextInt();
+
+		for(int row=1;row<=rows;row++) {
+			for(int col=1;col<=row;col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	private void pattern2() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many row you want?");
+		int row=sc.nextInt();
+		for(int rows=1;rows<=row;rows++) {
+			for(int col=1;col<=row-rows;col++) {
+				System.out.print("  ");
+			}
+			for(int col=1;col<=rows;col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}			
+	}
+	private void pattern1() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many row you want?");
+		int row=sc.nextInt();
+		for(int rows=1;rows<=row;rows++) {
+			for(int col=1;col<=(row+1)-rows;col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 	}
 	private void powerOfCube() {
 		// TODO Auto-generated method stub
