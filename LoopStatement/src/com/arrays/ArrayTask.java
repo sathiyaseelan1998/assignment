@@ -16,8 +16,26 @@ public class ArrayTask {
 		//at.oddIndex(arr);
 		//at.evenIndex(arr);
 		//at.getMark();
-		at.getBiggest();
+		//at.getBiggest();
+		at.getSmallest();
 		
+	}
+	private void getSmallest() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no of days");
+		int day=sc.nextInt();
+		int temp[]=new int[day];
+		int small=Integer.MAX_VALUE;
+		for(int i=0;i<temp.length;i++) {
+			System.out.print("Enter tempeture: ");
+			temp[i]=sc.nextInt();
+			if(temp[i]<small) {
+				small=temp[i];
+			}
+			
+		}
+		System.out.println("Lowest tempeture: "+small);
 	}
 	private void getBiggest() {
 		// TODO Auto-generated method stub
@@ -25,13 +43,16 @@ public class ArrayTask {
 		System.out.println("Enter no of subject");
 		int sub=sc.nextInt();
 		int mark[]=new int[sub];
-		int total=0;
+		int big=0;
 		for(int i=0;i<mark.length;i++) {
 			System.out.print("Enter mark: ");
 			mark[i]=sc.nextInt();
-			total+=mark[i];
+			if(mark[i]>big) {
+				big=mark[i];
+			}
+			
 		}
-		System.out.println("Total: "+total);
+		System.out.println("Highest mark: "+big);
 	}
 	private void getMark() {
 		// TODO Auto-generated method stub
