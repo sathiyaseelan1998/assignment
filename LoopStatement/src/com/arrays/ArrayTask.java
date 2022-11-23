@@ -17,8 +17,25 @@ public class ArrayTask {
 		//at.evenIndex(arr);
 		//at.getMark();
 		//at.getBiggest();
-		//at.getSmallest();
-		
+		at.getSmallest();
+		//at.lowestMark();
+	}
+	private void lowestMark() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no of subject");
+		int sub=sc.nextInt();
+		int mark[]=new int[sub];
+		int low=Integer.MAX_VALUE;
+		for(int i=0;i<mark.length;i++) {
+			System.out.print("Enter mark: ");
+			mark[i]=sc.nextInt();
+			if(mark[i]<low) {
+				low=mark[i];
+			}
+			
+		}
+		System.out.println("Lowest mark: "+low);
 	}
 	private void getSmallest() {
 		// TODO Auto-generated method stub
@@ -27,15 +44,20 @@ public class ArrayTask {
 		int day=sc.nextInt();
 		int temp[]=new int[day];
 		int small=Integer.MAX_VALUE;
+		int big=Integer.MIN_VALUE;
 		for(int i=0;i<temp.length;i++) {
 			System.out.print("Enter temperature: ");
 			temp[i]=sc.nextInt();
 			if(temp[i]<small) {
 				small=temp[i];
 			}
+			if(temp[i]>big) {
+				big=temp[i];
+			}
 			
 		}
 		System.out.println("Lowest temperature: "+small);
+		System.out.println("Highest temperature: "+big);
 	}
 	private void getBiggest() {
 		// TODO Auto-generated method stub
