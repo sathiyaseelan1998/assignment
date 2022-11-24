@@ -17,8 +17,44 @@ public class ArrayTask {
 		//at.evenIndex(arr);
 		//at.getMark();
 		//at.getBiggest();
-		at.getSmallest();
+		//at.getSmallest();
 		//at.lowestMark();
+		//at.secondBiggestNo();
+		at.secondSmallestNo();
+	}
+	private void secondSmallestNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {15,25,18,12,40};
+		int small1=Integer.MAX_VALUE;
+		int small2=Integer.MAX_VALUE;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]<small1) {
+				small2=small1;
+				small1=ar[i];
+			}
+			else if(ar[i]<small2) {
+				small2=ar[i];
+			}
+		}
+		System.out.println("First smallest no: "+small1);
+		System.out.println("Second smallest no: "+small2);
+	}
+	private void secondBiggestNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {15,25,18,12,40};
+		int big1=Integer.MIN_VALUE;
+		int big2=Integer.MIN_VALUE;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]>big1) {
+				big2=big1;
+				big1=ar[i];
+			}
+			else if(ar[i]>big2) {
+				big2=ar[i];
+			}
+		}
+		System.out.println("First biggest no: "+big1);
+		System.out.println("Second biggest no: "+big2);
 	}
 	private void lowestMark() {
 		// TODO Auto-generated method stub
