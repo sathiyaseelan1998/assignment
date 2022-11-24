@@ -33,7 +33,7 @@ public class ArrayTask {
 	private void addTwoArray_A() {
 		// TODO Auto-generated method stub
 		int a[]= {10,20,30};
-		int b[]= {10,20,30,40,50,70};
+		int b[]= {10,20,30,40,50,70,90};
 		int small=a.length<b.length?a.length:b.length;
 		int big=a.length>b.length?a.length:b.length;
 		int c[]=new int[big];
