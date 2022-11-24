@@ -28,7 +28,7 @@ public class ArrayTask {
 		//int count=at.countOfNegativeNo(ar);
 		//at.copyNegativeNoArray(ar,count);
 		//at.addTwoArray();
-		at.addTwoArray_A();
+		//at.addTwoArray_A();
 	}
 	private void addTwoArray_A() {
 		// TODO Auto-generated method stub
