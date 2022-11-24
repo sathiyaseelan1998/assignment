@@ -20,7 +20,97 @@ public class ArrayTask {
 		//at.getSmallest();
 		//at.lowestMark();
 		//at.secondBiggestNo();
-		at.secondSmallestNo();
+		//at.secondSmallestNo();
+		//at.addOfOddIndex();
+		//at.copyArrayReverseOrder();
+		//at.negativeNoArray();
+		//int ar[]= {40,20,-10,-20,-30,50};
+		//int count=at.countOfNegativeNo(ar);
+		//at.copyNegativeNoArray(ar,count);
+		//at.addTwoArray();
+		at.addTwoArray_A();
+	}
+	private void addTwoArray_A() {
+		// TODO Auto-generated method stub
+		int a[]= {10,20,30};
+		int b[]= {10,20,30,40,50,70};
+		int small=a.length<b.length?a.length:b.length;
+		int big=a.length>b.length?a.length:b.length;
+		int c[]=new int[big];
+		for(int i=0;i<small;i++) {
+			c[i]=a[i]+b[i];
+			System.out.print(c[i]+" ");
+		}
+		for(int i=small;i<c.length;i++) {
+			c[i]=b[i];
+			System.out.print(c[i]+" ");
+		}
+		
+	}
+	private void addTwoArray() {
+		// TODO Auto-generated method stub
+		int a[]= {10,20,30};
+		int b[]= {10,20,30};
+		int c[]=new int[b.length];
+		for(int i=0;i<b.length;i++) {
+			c[i]=a[i]+b[i];
+			System.out.print(c[i]+" ");
+		}
+		
+	}
+	private void copyNegativeNoArray(int[] ar, int count) {
+		// TODO Auto-generated method stub
+		int neg[]=new int[count];
+		int j=0;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]<0) {
+				neg[j]=ar[i];
+				System.out.print(neg[j]+" ");
+				j++;
+			}
+		}
+	}
+	private int countOfNegativeNo(int ar[]) {
+		// TODO Auto-generated method stub
+		int count=0;
+		for(int i=0;i<ar.length;i++) {
+			if(0>ar[i]) {
+				count++;
+			}
+		}
+		//System.out.println("No of negative = "+count);
+		return count;
+	}
+	private void negativeNoArray() {
+		// TODO Auto-generated method stub
+		int ar[]= {40,20,-10,-20,-30,50};
+		for(int i=0;i<ar.length;i++) {
+			if(0>ar[i]) {
+				System.out.print(ar[i]+" ");
+			}
+		}
+	}
+	private void copyArrayReverseOrder() {
+		// TODO Auto-generated method stub
+		int ar[]= {10,20,30,50};
+		int rev[]=new int[ar.length];
+		int j=ar.length-1;
+		for(int i=0;i<ar.length;i++) {
+				rev[i]=ar[j];
+				System.out.print(rev[i]+" ");
+				j--;
+		}
+	}
+	private void addOfOddIndex() {
+		// TODO Auto-generated method stub
+		int []ar= {10,20,30,40,50,60};
+		int sum=0;
+		for(int i=0;i<ar.length;i++) {
+			if(i%2!=0) {
+				sum+=ar[i];
+			}
+		}
+		System.out.println(sum);
 	}
 	private void secondSmallestNo() {
 		// TODO Auto-generated method stub
