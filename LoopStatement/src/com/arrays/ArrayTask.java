@@ -30,9 +30,71 @@ public class ArrayTask {
 		//at.addTwoArray();
 		//at.addTwoArray_A();
 		//at.lastPlace();
+		//int ar[]= {10,20,30,40,50};
+		//at.moveLeft(ar);
+		//at.twiceLeftMove();
+		//at.moveRight(ar);
+		//at.twiceRightMove();
+		at.removeValueInArray();
+	}
+	private void removeValueInArray() {
+		// TODO Auto-generated method stub
+		int ar[]= {10,20,30,40,50};
+		System.out.println("Print value ");
+		for(int i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
+		System.out.println();
+		System.out.println("Remove value ");
+		int key=20;
+		int index=-1;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]==key) {
+				index=i;
+				break;
+			}
+		}
+		for(int i=index;i<ar.length-1;i++) {
+			ar[i]=ar[i+1];
+		}
+		for(int i=0;i<ar.length-1;i++) {
+			System.out.print(ar[i]+" ");
+		}
+	}
+	private void twiceRightMove() {
+		// TODO Auto-generated method stub
+		int ar[]= {10,20,30,40,50};
+		for (int shift = 1; shift <= 2; shift++) { //twice move from right
+			int right[] = moveRight(ar);
+			for (int i = 0; i < right.length; i++) {
+				System.out.print(right[i] + " ");
+			}
+		}
+	}
+	private int[] moveRight(int[] ar) {
+		// TODO Auto-generated method stub
+		//int ar[]= {10,20,30,40,50};
+		System.out.println();
+		System.out.print("Before Move ");
+		int temp=ar[ar.length-1];
+		
+		for(int i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
+		System.out.println();
+		System.out.print("After Move ");
+		int i;
+		for(i=ar.length-1;i>=1;i--) {
+			ar[i]=ar[i-1];
+		}
+		ar[i]=temp;
+		return ar;
+	}
+	private void twiceLeftMove() {
+		// TODO Auto-generated method stub
 		int ar[]= {10,30,59,40,20};
 		for (int shift = 1; shift <= 2; shift++) { //twice move from left
-			int left[] = at.moveLeft(ar);
+			int left[] = moveLeft(ar);
 			for (int i = 0; i < left.length; i++) {
 				System.out.print(left[i] + " ");
 			}
