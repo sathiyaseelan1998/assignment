@@ -29,6 +29,41 @@ public class ArrayTask {
 		//at.copyNegativeNoArray(ar,count);
 		//at.addTwoArray();
 		//at.addTwoArray_A();
+		//at.lastPlace();
+		int ar[]= {10,30,59,40,20};
+		for (int shift = 1; shift <= 2; shift++) { //twice move from left
+			int left[] = at.moveLeft(ar);
+			for (int i = 0; i < left.length; i++) {
+				System.out.print(left[i] + " ");
+			}
+		}
+	}
+	private int[] moveLeft(int ar[]) {
+		// TODO Auto-generated method stub
+		System.out.println();
+		System.out.print("Before Move ");
+		int temp=ar[0];
+		for(int i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
+		System.out.println();
+		System.out.print("After Move ");
+		int i;
+		for(i=0;i<ar.length-1;i++) {
+			ar[i]=ar[i+1];
+		}
+		ar[i]=temp;
+		return ar;
+			
+	}
+	private void lastPlace() {
+		// TODO Auto-generated method stub
+		int ar[]= {10,20,40};
+		int key=30;
+		ar[ar.length-1]=key;
+		for(int i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
 	}
 	private void addTwoArray_A() {
 		// TODO Auto-generated method stub
