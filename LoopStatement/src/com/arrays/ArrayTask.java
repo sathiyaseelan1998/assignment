@@ -34,7 +34,7 @@ public class ArrayTask {
 		//at.moveLeft(ar);
 		//at.twiceLeftMove();
 		//at.moveRight(ar);
-		at.twiceRightMove();
+		//at.twiceRightMove();
 		at.removeValueInArray();
 	}
 	private void removeValueInArray() {
