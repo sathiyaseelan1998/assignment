@@ -38,8 +38,59 @@ public class ArrayTask {
 		//at.removeValueInArray();
 		//at.firstRepeatedElement();
 		//at.allRepeatedElement();
-		at.allRepeatedChracter("sathiyaseelan");
+		//at.allRepeatedChracter("sathiyaseelan");
+		//at.mostRepeatedCharacter("sathiyaseelan");
+		at.nonRepeatedElement("sathiyaseelan");
 
+	}
+	private void nonRepeatedElement(String str) {
+		// TODO Auto-generated method stub
+		char[] name=str.toCharArray();
+		int[] freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]==1)
+				System.out.println(name[i]+" - is non repeated ");
+		}
+	}
+	private void mostRepeatedCharacter(String str) {
+		// TODO Auto-generated method stub
+		char[] name=str.toCharArray();
+		int[] freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		char highest=0;
+		int big=Integer.MIN_VALUE;
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]>big) {
+				big=freq[i];
+				highest=name[i];
+			}
+		}
+		System.out.println(highest+" is most repeated character "+ big);
 	}
 	private void allRepeatedChracter(String str) {
 		// TODO Auto-generated method stub
@@ -60,16 +111,8 @@ public class ArrayTask {
 		}
 		for(int i=0;i<freq.length;i++) {
 			if(freq[i]>1)
-			System.out.println(name[i]+" times "+freq[i]+" repeate");
+				System.out.println(name[i]+" times "+freq[i]+" repeate");
 		}
-		int big=Integer.MIN_VALUE;
-		for(int i=0;i<freq.length;i++) {
-			if(freq[i]>big)
-			//System.out.println(name[i]+" times "+freq[i]+" repeate");
-				big=freq[i];
-		}
-		System.out.println(big);
-
 	}
 	private void allRepeatedElement() {
 		// TODO Auto-generated method stub
