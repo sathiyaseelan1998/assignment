@@ -35,7 +35,27 @@ public class ArrayTask {
 		//at.twiceLeftMove();
 		//at.moveRight(ar);
 		//at.twiceRightMove();
-		at.removeValueInArray();
+		//at.removeValueInArray();
+		at.firstRepeatedElement();
+	}
+	private void firstRepeatedElement() {
+		// TODO Auto-generated method stub
+		String str="sathiyaseelan";
+		boolean repeat=false;
+		char[] name=str.toCharArray();
+		for(int i=0;i<name.length-1;i++) {
+			char key=name[i];
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					System.out.println(name[j]);
+					repeat=true;
+					break;
+				}
+			}
+			if(repeat==true) {
+				break;
+			}
+		}
 	}
 	private void removeValueInArray() {
 		// TODO Auto-generated method stub
