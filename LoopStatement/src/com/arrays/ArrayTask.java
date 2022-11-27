@@ -37,7 +37,39 @@ public class ArrayTask {
 		//at.twiceRightMove();
 		//at.removeValueInArray();
 		//at.firstRepeatedElement();
-		at.allRepeatedElement();
+		//at.allRepeatedElement();
+		at.allRepeatedChracter("sathiyaseelan");
+
+	}
+	private void allRepeatedChracter(String str) {
+		// TODO Auto-generated method stub
+		char[] name=str.toCharArray();
+		int[] freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]>1)
+			System.out.println(name[i]+" times "+freq[i]+" repeate");
+		}
+		int big=Integer.MIN_VALUE;
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]>big)
+			//System.out.println(name[i]+" times "+freq[i]+" repeate");
+				big=freq[i];
+		}
+		System.out.println(big);
+
 	}
 	private void allRepeatedElement() {
 		// TODO Auto-generated method stub
