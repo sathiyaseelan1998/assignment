@@ -36,7 +36,32 @@ public class ArrayTask {
 		//at.moveRight(ar);
 		//at.twiceRightMove();
 		//at.removeValueInArray();
-		at.firstRepeatedElement();
+		//at.firstRepeatedElement();
+		at.allRepeatedElement();
+	}
+	private void allRepeatedElement() {
+		// TODO Auto-generated method stub
+		int[] no = { 10, 20, 30, 10, 50, 20, 10, 30, 60 };
+		int[] repeatCount = new int[no.length];
+		
+		for (int i = 0; i < no.length; i++) {
+			int key = no[i];
+			int count = 1;
+			for (int j = i + 1; j < no.length; j++) {
+				if (key == no[j]) {
+					// System.out.println(no[j]);
+					repeatCount[j] = -1;
+					count++;
+				}
+			}
+			if (repeatCount[i] != -1) {
+				repeatCount[i] = count;
+			}
+		}
+		for(int i=0;i<repeatCount.length;i++) {
+			if(repeatCount[i]>1)
+			System.out.println(no[i]+" times "+repeatCount[i]+" repeate");
+		}
 	}
 	private void firstRepeatedElement() {
 		// TODO Auto-generated method stub
