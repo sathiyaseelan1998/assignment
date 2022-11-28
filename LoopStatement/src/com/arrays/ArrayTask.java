@@ -48,8 +48,43 @@ public class ArrayTask {
 		//at.factorial(5);
 		//at.strongNo();
 		//at.printOddElementInEevenIndex();
-		at.printEvenElementInOddIndex();
+		//at.printEvenElementInOddIndex();
+		at.splitOddAndEvenElement();
 
+	}
+	private void splitOddAndEvenElement() {
+		// TODO Auto-generated method stub
+		int ar[]= {10,20,23,25,27,28,15,18};
+		int evenCount=0;
+		int oddCount=0;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]%2==0) {
+				evenCount++;
+			}
+			else {
+				oddCount++;
+			}
+		}
+		int even[] = new int[evenCount];
+		int odd[] =  new int[oddCount];
+		int j=0; int k=0;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]%2==0) {
+				even[j++]=ar[i];
+			}
+			else{
+				odd[k++]=ar[i];
+			}
+		}
+		System.out.print("even: ");
+		for(int i=0;i<even.length;i++) {
+				System.out.print(even[i]+" ");	
+		}
+		System.out.println();
+		System.out.print("odd: ");
+		for(int i=0;i<odd.length;i++) {
+				System.out.print(odd[i]+" ");	
+		}
 	}
 	private void printEvenElementInOddIndex() {
 		// TODO Auto-generated method stub
