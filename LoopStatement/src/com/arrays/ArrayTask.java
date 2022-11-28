@@ -49,8 +49,22 @@ public class ArrayTask {
 		//at.strongNo();
 		//at.printOddElementInEevenIndex();
 		//at.printEvenElementInOddIndex();
-		at.splitOddAndEvenElement();
+		//at.splitOddAndEvenElement();
+		at.divideNoSameArray();
 
+	}
+	private void divideNoSameArray() {
+		// TODO Auto-generated method stub
+		int ar[]= {30,12,35,40,9};
+		int div=0;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]%3==0) {
+				div=ar[i]/3;
+				ar[i]=div;
+			}
+			System.out.print(ar[i]+" ");
+		}
+	
 	}
 	private void splitOddAndEvenElement() {
 		// TODO Auto-generated method stub
@@ -67,13 +81,16 @@ public class ArrayTask {
 		}
 		int even[] = new int[evenCount];
 		int odd[] =  new int[oddCount];
-		int j=0; int k=0;
+		int j=0; 
+		int k=0;
 		for(int i=0;i<ar.length;i++) {
 			if(ar[i]%2==0) {
-				even[j++]=ar[i];
+				even[j]=ar[i];
+				j++;
 			}
 			else{
-				odd[k++]=ar[i];
+				odd[k]=ar[i];
+				k++;
 			}
 		}
 		System.out.print("even: ");
