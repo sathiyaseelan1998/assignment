@@ -40,8 +40,121 @@ public class ArrayTask {
 		//at.allRepeatedElement();
 		//at.allRepeatedChracter("sathiyaseelan");
 		//at.mostRepeatedCharacter("sathiyaseelan");
-		at.nonRepeatedElement("sathiyaseelan");
+		//at.nonRepeatedElement("sathiyaseelan");
+		//at.findIndexAdd10();
+		//at.findIndexMultiple20();
+		//at.primeNo();
+		//at.perfectNo();
+		//at.factorial(5);
+		//at.strongNo();
+		//at.printOddElementInEevenIndex();
 
+	}
+	private void printOddElementInEevenIndex() {
+		// TODO Auto-generated method stub
+		int ar[]= {9,11,17,13,14,16,5};
+		for(int i=0;i<ar.length;i++) {
+			if(i%2==0 && ar[i]%2!=0) {
+				System.out.print(ar[i]+" ");
+			}
+		}
+	}
+	private void strongNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {1,100,145,148,234};
+		for(int i=0;i<ar.length;i++) {
+			int temp=ar[i];
+			int sum=0;
+			while(0<ar[i]) {
+				int rem=ar[i]%10;
+				sum=sum+factorial(rem);
+				ar[i]=ar[i]/10;
+			}
+			if(sum==temp) {
+				System.out.println(temp+" is strong no");
+			}
+			else{
+				System.out.println(temp+" is not strong no");
+			}
+		}
+		
+	}
+	private int factorial(int no) {
+		// TODO Auto-generated method stub
+		int fact=1;
+		while(0<no) {
+			fact=fact*no;
+			no--;
+		}
+		//System.out.println(fact);
+		return fact;
+	}
+	private void perfectNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {6,7,45,28};
+		for(int i=0;i<ar.length;i++) {
+			int div=1;
+			int sum=0;
+			while(div<ar[i]) {
+				if(ar[i]%div==0) {
+					sum=sum+div;
+				}
+				div++;
+			}
+			if(ar[i]==sum) {
+				System.out.println(ar[i]+" is perfect no");
+			}
+			else{
+				System.out.println(ar[i]+" is not perfect no");
+			}
+		}
+		
+	}
+	private void primeNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {3,5,6,7,8,11,12,13};
+		for(int i=0;i<ar.length;i++) {
+			int div=2;
+			int count=0;
+			while(div<ar[i]) {
+				if(ar[i]%div==0) {
+					count++;
+				}
+				
+				div++;
+			}
+			if(count==0) {
+				System.out.println(ar[i]+" is prime no");
+			}
+			else{
+				System.out.println(ar[i]+" is not prime no");
+			}
+		}
+		
+	}
+	private void findIndexMultiple20() {
+		// TODO Auto-generated method stub
+		int ar[]= {1,20,5,3,5,6,4};
+		for(int i=0;i<ar.length;i++) {
+			int key=ar[i];
+			for(int j=i+1;j<ar.length;j++) {
+				if(key*ar[j]==20) {
+					System.out.println(i+"   "+j);
+				}
+			}
+		}
+	}
+	private void findIndexAdd10() {
+		// TODO Auto-generated method stub
+		int ar[]= {0,10,5,3,5,6,7};
+		for(int i=0;i<ar.length;i++) {
+			int key=ar[i];
+			for(int j=i+1;j<ar.length;j++) {
+				if(key+ar[j]==10) {
+					System.out.println(i+"   "+j);
+				}
+			}
+		}
 	}
 	private void nonRepeatedElement(String str) {
 		// TODO Auto-generated method stub
