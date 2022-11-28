@@ -48,7 +48,17 @@ public class ArrayTask {
 		//at.factorial(5);
 		//at.strongNo();
 		//at.printOddElementInEevenIndex();
+		at.printEvenElementInOddIndex();
 
+	}
+	private void printEvenElementInOddIndex() {
+		// TODO Auto-generated method stub
+		int []ar= {10,20,40,10,13,15,16,18};
+		for(int i=0;i<ar.length;i++) {
+			if(i%2!=0 && ar[i]%2==0) {
+				System.out.print(ar[i]+" ");
+			}
+		}
 	}
 	private void printOddElementInEevenIndex() {
 		// TODO Auto-generated method stub
