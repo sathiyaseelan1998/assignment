@@ -50,9 +50,25 @@ public class ArrayTask {
 		//at.printOddElementInEevenIndex();
 		//at.printEvenElementInOddIndex();
 		//at.splitOddAndEvenElement();
-		at.divideNoSameArray();
+		//at.divideNoSameArray();
+		at.printOnlyAdjacentValues();
+		
 
 	}
+	private void printOnlyAdjacentValues() {
+		// TODO Auto-generated method stub
+		int[] ar = {16, 8, 15, 7,30}; 
+		//			0  1   2  3
+					//3<8
+		for(int j = 0; j<ar.length-1; j++)
+		{
+		int small = ar[j]<ar[j+1]?ar[j]: ar[j+1];
+		int big = ar[j]>ar[j+1]? ar[j]: ar[j+1]; 
+		for(int i= small; i<=big; i++)
+		System.out.print(i+" "); 
+		System.out.println();
+		}
+		}
 	private void divideNoSameArray() {
 		// TODO Auto-generated method stub
 		int ar[]= {30,12,35,40,9};
