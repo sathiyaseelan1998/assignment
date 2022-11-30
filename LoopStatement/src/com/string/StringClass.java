@@ -16,11 +16,18 @@ public class StringClass {
 		//sc.palindrome("madam");
 		//sc.repeatedElement("sathiyaseelan");
 		//sc.repeatedElement_A("sathiyaseelan");
-		sc.StringToChar("shakthi");
+		//sc.stringToChar("shakthi");
+		sc.stringToInteger("123");
 		
 	}
 
-	private void StringToChar(String name) {
+	private void stringToInteger(String str) {
+		// TODO Auto-generated method stub
+		int no=Integer.parseInt(str);
+		System.out.println(no);
+	}
+
+	private void stringToChar(String name) {
 		// TODO Auto-generated method stub
 		char[] ch=name.toCharArray();
 		for(int i=0;i<ch.length;i++) {
