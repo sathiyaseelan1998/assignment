@@ -16,7 +16,16 @@ public class StringClass {
 		//sc.palindrome("madam");
 		//sc.repeatedElement("sathiyaseelan");
 		//sc.repeatedElement_A("sathiyaseelan");
+		sc.StringToChar("shakthi");
 		
+	}
+
+	private void StringToChar(String name) {
+		// TODO Auto-generated method stub
+		char[] ch=name.toCharArray();
+		for(int i=0;i<ch.length;i++) {
+			System.out.print(ch[i]);
+		}
 	}
 
 	private void repeatedElement_A(String name) {
