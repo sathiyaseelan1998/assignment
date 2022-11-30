@@ -17,8 +17,100 @@ public class StringClass {
 		//sc.repeatedElement("sathiyaseelan");
 		//sc.repeatedElement_A("sathiyaseelan");
 		//sc.stringToChar("shakthi");
-		sc.stringToInteger("123");
+		//sc.stringToInteger("123");
+		//sc.charToString();
+		//sc.firstRepeatedElement("sathiyaseelan");
+		//sc.firstNonRepeatedElement("sathiyaseelan");
+		//sc.lastRepeatedElement("sathiyaseelan");
+		//sc.countOfWords("hi i am shakthi from trichy");
+		sc.comapareString("dhoni","virat");
 		
+	}
+
+	private void comapareString(String str, String str2) {
+		// TODO Auto-generated method stub
+		System.out.println(str2.compareTo(str));
+	}
+
+	private void countOfWords(String str) {
+		// TODO Auto-generated method stub
+		int count=0;
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)==' ') {
+				count++;
+			}
+		}
+		System.out.println(count+1);
+	}
+
+	private void lastRepeatedElement(String str) {
+		// TODO Auto-generated method stub
+		char[] ch=str.toCharArray();
+		boolean repeate=false;
+		for(int i=ch.length-1;i>=0;i--) {
+			char key=ch[i];
+			for(int j=ch.length-2;j>0;j--) {
+				if(key==ch[j]) {
+					System.out.println("Last Repeated Element is "+ch[j]);
+					repeate=true;
+					break;
+				}
+			}
+			if(repeate==true) {
+				break;
+			}
+		}
+	}
+
+	private void firstNonRepeatedElement(String str) {
+		// TODO Auto-generated method stub
+		char[] name=str.toCharArray();
+		int[] freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]==1) {
+				System.out.println(name[i]+" is first non repeated element");
+				break;
+			}
+		}
+	}
+
+	private void firstRepeatedElement(String str) {
+		// TODO Auto-generated method stub
+		char ch[]=str.toCharArray();
+		boolean repeate=false;
+		for(int i=0;i<ch.length-1;i++) {
+			char key=ch[i];
+			for(int j=i+1;j<ch.length;j++) {
+				if(key==ch[j]) {
+					System.out.println("First Repeated Element is "+ch[j]);
+					repeate=true;
+					break;
+				}
+			}
+			if(repeate==true) {
+				break;
+			}
+		}
+	}
+
+	private void charToString() {
+		// TODO Auto-generated method stub
+		char[] ch= {'v','i','r','a','t'};
+		String str=new String(ch);
+		System.out.println(str);
 	}
 
 	private void stringToInteger(String str) {
