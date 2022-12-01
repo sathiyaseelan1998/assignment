@@ -25,13 +25,40 @@ public class StringClass {
 		//sc.countOfWords("hi i am shakthi from trichy");
 		//sc.comapareString("dhoni","virat");
 		//sc.lowerToUpper("shakthi");
-		sc.upperToLower("DHONI");
-		
+		//sc.upperToLower("DHONI");
+		//sc.firstUpper("virat");
+		sc.findWord("i am dhoni");
 	}
 
-	private void upperToLower(String string) {
+	private void findWord(String str) {
 		// TODO Auto-generated method stub
-		
+		String[] name=new String[3];
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)==' ') {
+				name[i]=name[i]+str.charAt(i);
+			}
+		}
+	}
+
+	private void firstUpper(String str) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<str.length();i++) {
+			char ch=str.charAt(i);
+			if(i==0) {
+				ch=(char) (str.charAt(i)-32);
+			}
+				System.out.print(ch);
+		}
+	}
+
+	private void upperToLower(String str) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<str.length();i++) {
+			char ch=str.charAt(i);
+			if(ch>'A' && ch<'Z') {
+				System.out.print((char)(ch+32));
+			}
+		}
 	}
 
 	private void lowerToUpper(String str) {
