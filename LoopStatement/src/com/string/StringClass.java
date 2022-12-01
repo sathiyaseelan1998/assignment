@@ -23,8 +23,19 @@ public class StringClass {
 		//sc.firstNonRepeatedElement("sathiyaseelan");
 		//sc.lastRepeatedElement("sathiyaseelan");
 		//sc.countOfWords("hi i am shakthi from trichy");
-		sc.comapareString("dhoni","virat");
+		//sc.comapareString("dhoni","virat");
+		sc.lowerToUpper("shakthi");
 		
+	}
+
+	private void lowerToUpper(String str) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<str.length();i++) {
+			char ch=str.charAt(i);
+			if(ch>'a' && ch<'z') {
+				System.out.print((char)(ch-32));
+			}
+		}
 	}
 
 	private void comapareString(String str, String str2) {
