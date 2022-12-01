@@ -24,7 +24,13 @@ public class StringClass {
 		//sc.lastRepeatedElement("sathiyaseelan");
 		//sc.countOfWords("hi i am shakthi from trichy");
 		//sc.comapareString("dhoni","virat");
-		sc.lowerToUpper("shakthi");
+		//sc.lowerToUpper("shakthi");
+		sc.upperToLower("DHONI");
+		
+	}
+
+	private void upperToLower(String string) {
+		// TODO Auto-generated method stub
 		
 	}
 
