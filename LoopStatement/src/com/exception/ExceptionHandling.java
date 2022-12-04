@@ -11,8 +11,8 @@ public class ExceptionHandling {
 		//eh.tryCatch();
 		//eh.multipleCatch();
 		//eh.multipleTry();
-		eh.finallyBlock();
-		//eh.withoutCatch();
+		//eh.finallyBlock();
+		eh.withoutCatch();
 	}
 
 	private void withoutCatch() {
