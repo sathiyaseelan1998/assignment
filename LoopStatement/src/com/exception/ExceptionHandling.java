@@ -10,7 +10,33 @@ public class ExceptionHandling {
 		ExceptionHandling eh=new ExceptionHandling();
 		//eh.tryCatch();
 		//eh.multipleCatch();
-		eh.multipleTry();
+		//eh.multipleTry();
+		eh.finallyBlock();
+		//eh.withoutCatch();
+	}
+
+	private void withoutCatch() {
+		// TODO Auto-generated method stub
+		try {
+			System.out.println(10/0);
+		}
+		finally {
+			System.out.println("i am execute exception occurs or not");
+		}
+	}
+
+	private void finallyBlock() {
+		// TODO Auto-generated method stub
+		try {
+			System.out.println(10/0);
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		finally {
+			System.out.println("i am execute exception occurs or not");
+		}
+		
 	}
 
 	private void multipleTry() {
