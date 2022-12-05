@@ -15,8 +15,17 @@ public class ExceptionHandling {
 		//eh.finallyBlock();
 		//eh.withoutCatch();
 		//eh.usingThrows();
+		eh.usingThrow();
 	}
-	void throws2() throws Exception{
+	void usingThrow() {
+		// TODO Auto-generated method stub
+		int no1=0;
+		if(no1==0) {
+		ArithmeticException ar=new ArithmeticException();
+		throw ar;
+		}
+	}
+	void throws2() throws ArithmeticException,Exception{
 		int avg=10/0;
 		System.out.println(avg);
 	}
