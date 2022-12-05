@@ -15,13 +15,12 @@ public class ExceptionHandling {
 		//eh.finallyBlock();
 		//eh.withoutCatch();
 		//eh.usingThrows();
-		eh.usingThrow();
 	}
-	void usingThrow() {
+	void usingThrow() throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		int no1=0;
 		if(no1==0) {
-		ArithmeticException ar=new ArithmeticException();
+		FileNotFoundException ar=new FileNotFoundException();
 		throw ar;
 		}
 	}
