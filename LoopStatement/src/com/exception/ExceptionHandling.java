@@ -1,5 +1,6 @@
 package com.exception;
 
+import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,7 +13,18 @@ public class ExceptionHandling {
 		//eh.multipleCatch();
 		//eh.multipleTry();
 		//eh.finallyBlock();
-		eh.withoutCatch();
+		//eh.withoutCatch();
+		//eh.usingThrows();
+	}
+	void throws2() throws Exception{
+		int avg=10/0;
+		System.out.println(avg);
+	}
+
+	void usingThrows() throws ArithmeticException {
+		// TODO Auto-generated method stub
+		int avg=10/0;
+		System.out.println(avg);
 	}
 
 	private void withoutCatch() {
