@@ -24,9 +24,9 @@ public class FileIO {
 		//f.writeFile();
 		//f.bufferedWriter();
 		//f.readFile();
-		f.countSentence();
+		//f.countSentence();
 		//f.bufferedReader();
-		//f.subFolder();
+		f.subFolder();
 	}
 	private void subFolder() {
 		// TODO Auto-generated method stub
