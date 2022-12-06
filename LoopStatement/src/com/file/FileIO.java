@@ -24,7 +24,7 @@ public class FileIO {
 		//f.writeFile();
 		//f.bufferedWriter();
 		//f.readFile();
-		//f.countSentence();
+		f.countSentence();
 		//f.bufferedReader();
 		//f.subFolder();
 	}
