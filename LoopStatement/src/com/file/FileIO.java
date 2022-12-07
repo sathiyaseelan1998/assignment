@@ -3,7 +3,9 @@ package com.file;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -26,7 +28,26 @@ public class FileIO {
 		//f.readFile();
 		//f.countSentence();
 		//f.bufferedReader();
-		f.subFolder();
+		//f.subFolder();
+		//--------------------
+		f.fileInputStream();
+	}
+	private void fileInputStream() throws IOException {
+		// TODO Auto-generated method stub
+		File input=new File("/home/sathiyaseelan/Downloads/key.jpg");
+		File output=new File("/home/sathiyaseelan/Downloads/key2.jpg");
+		
+		FileInputStream fis=new FileInputStream(input);
+		FileOutputStream fos=new FileOutputStream(output);
+		int r=fis.read();
+		while(r!=-1) {
+			fos.write(r);
+			fis.read();
+		}
+		fos.flush();
+		fos.close();
+		
+
 	}
 	private void subFolder() {
 		// TODO Auto-generated method stub
