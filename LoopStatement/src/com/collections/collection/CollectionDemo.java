@@ -26,8 +26,8 @@ public class CollectionDemo{
 		//cd.printDuplicate();
 		//cd.yesOrNo();
 		//cd.printIntegerOnly();
-		//cd.objectAdd();
-		cd.iterate();
+		cd.objectAdd();
+		//cd.iterate();
 	}
 	private void iterate() {
 		// TODO Auto-generated method stub
