@@ -27,17 +27,38 @@ public class StringClass {
 		//sc.lowerToUpper("shakthi");
 		//sc.upperToLower("DHONI");
 		//sc.firstUpper("virat");
-		sc.findWord("i am dhoni");
+		//sc.findWord("iii am dhoni");
+		sc.program("i   am   go   to  school");
+	}
+
+	private void program(String str) {
+		// TODO Auto-generated method stub
+		char[] ch=str.toCharArray();
+		for(int i=0;i<ch.length;i++) {
+			if(!(ch[i]==' '))
+			System.out.print(i);
+		}
 	}
 
 	private void findWord(String str) {
 		// TODO Auto-generated method stub
-		String[] name=new String[3];
+		
+		int count=1;
+		String b="";
+		
 		for(int i=0;i<str.length();i++) {
 			if(str.charAt(i)==' ') {
-				name[i]=name[i]+str.charAt(i);
+				count++;
 			}
+			else if(!(str.charAt(i)==' '))
+			b=b+str.charAt(i);	
 		}
+		String[] name=new String[count];
+		for(int j=0;j<name.length;j++) {
+			
+		}
+		
+		
 	}
 
 	private void firstUpper(String str) {
