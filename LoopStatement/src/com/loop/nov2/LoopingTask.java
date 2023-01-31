@@ -45,7 +45,7 @@ public class LoopingTask {
 		//loop.allFactorials();
 		//loop.multiple1To10();
 		//loop.multiple11();
-		loop.powerOfCube();
+		//loop.powerOfCube();
 		//loop.powerOfSquare();
 		//loop.amstrongNo();
 		//loop.neonNumber();
@@ -55,7 +55,7 @@ public class LoopingTask {
 		//loop.findFirstNprimeNo();
 		//loop.findSquareRoot();
 		//loop.smallestDivisor();
-		//loop.greatestDivisor();
+		loop.greatestDivisor();
 		//loop.samePowerOfNumber();
 		//loop.perfectNumber();
 		//loop.spyNumber();
@@ -237,7 +237,7 @@ public class LoopingTask {
 	}
 	private void greatestDivisor() {
 		// TODO Auto-generated method stub
-		int number=70;
+		int number=55;
 		int div=number/2;
 		while(div>2) {
 			if(number%div==0) {
