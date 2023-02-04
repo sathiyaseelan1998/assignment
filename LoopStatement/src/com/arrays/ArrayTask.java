@@ -41,7 +41,7 @@ public class ArrayTask {
 		//at.allRepeatedChracter("sathiyaseelan");
 		//at.mostRepeatedCharacter("sathiyaseelan");
 		//at.nonRepeatedElement("sathiyaseelan");
-		//at.findIndexAdd10();
+		at.findIndexAdd10();
 		//at.findIndexMultiple20();
 		//at.primeNo();
 		//at.perfectNo();
@@ -51,7 +51,7 @@ public class ArrayTask {
 		//at.printEvenElementInOddIndex();
 		//at.splitOddAndEvenElement();
 		//at.divideNoSameArray();
-		at.printOnlyAdjacentValues();
+		//at.printOnlyAdjacentValues();
 		
 
 	}
@@ -302,7 +302,7 @@ public class ArrayTask {
 		}
 		for(int i=0;i<freq.length;i++) {
 			if(freq[i]>1)
-				System.out.println(name[i]+" times "+freq[i]+" repeate");
+				System.out.println(name[i]+" is "+freq[i]+" times repeate");
 		}
 	}
 	private void allRepeatedElement() {
@@ -326,7 +326,7 @@ public class ArrayTask {
 		}
 		for(int i=0;i<repeatCount.length;i++) {
 			if(repeatCount[i]>1)
-			System.out.println(no[i]+" times "+repeatCount[i]+" repeate");
+			System.out.println(no[i]+" is "+repeatCount[i]+" times repeate");
 		}
 	}
 	private void firstRepeatedElement() {
@@ -424,8 +424,12 @@ public class ArrayTask {
 		int i;
 		for(i=0;i<ar.length-1;i++) {
 			ar[i]=ar[i+1];
+			//System.out.print(ar[i]+" ");
 		}
 		ar[i]=temp;
+		/*
+		 * for(i=0;i<ar.length;i++) { System.out.print(ar[i]+" "); }
+		 */
 		return ar;
 			
 	}
