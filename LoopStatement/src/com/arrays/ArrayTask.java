@@ -11,7 +11,7 @@ public class ArrayTask {
 		//at.printArray(arr);
 		//at.printIndex(arr);
 		//at.reverseArray(arr);
-		//at.linearSearch(arr,50);
+		at.linearSearch(arr,50);
 		//at.linear(arr);
 		//at.oddIndex(arr);
 		//at.evenIndex(arr);
