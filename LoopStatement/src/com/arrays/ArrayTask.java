@@ -7,11 +7,11 @@ public class ArrayTask {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayTask at=new ArrayTask();
-		int[] arr= {10,40,30,40,50,40};
+		//int[] arr= {10,40,30,40,50,40};
 		//at.printArray(arr);
 		//at.printIndex(arr);
 		//at.reverseArray(arr);
-		at.linearSearch(arr,50);
+		//at.linearSearch(arr,50);
 		//at.linear(arr);
 		//at.oddIndex(arr);
 		//at.evenIndex(arr);
@@ -38,10 +38,10 @@ public class ArrayTask {
 		//at.removeValueInArray();
 		//at.firstRepeatedElement();
 		//at.allRepeatedElement();
-		//at.allRepeatedChracter("sathiyaseelan");
+		at.allRepeatedChracter("sathiyaseelan");
 		//at.mostRepeatedCharacter("sathiyaseelan");
 		//at.nonRepeatedElement("sathiyaseelan");
-		at.findIndexAdd10();
+		//at.findIndexAdd10();
 		//at.findIndexMultiple20();
 		//at.primeNo();
 		//at.perfectNo();
@@ -285,6 +285,7 @@ public class ArrayTask {
 	}
 	private void allRepeatedChracter(String str) {
 		// TODO Auto-generated method stub
+		//sathiyaseelan
 		char[] name=str.toCharArray();
 		int[] freq=new int[name.length];
 		for(int i=0;i<name.length;i++) {
@@ -301,6 +302,7 @@ public class ArrayTask {
 			}
 		}
 		for(int i=0;i<freq.length;i++) {
+			//System.out.print(freq[i]+" ");
 			if(freq[i]>1)
 				System.out.println(name[i]+" is "+freq[i]+" times repeate");
 		}
