@@ -285,7 +285,7 @@ public class ArrayTask {
 	}
 	private void allRepeatedChracter(String str) {
 		// TODO Auto-generated method stub
-		//sathiyaseelan
+		//sathiyaseelan/
 		char[] name=str.toCharArray();
 		int[] freq=new int[name.length];
 		for(int i=0;i<name.length;i++) {
