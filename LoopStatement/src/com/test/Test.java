@@ -8,7 +8,54 @@ public class Test {
 		//t.biggestNo();
 		//t.smallestNo();
 		//t.secondBiggest();
-		t.secondSmallest();
+		//t.secondSmallest();
+		String str="sathiyaseelan";
+		char[] name=str.toCharArray();
+		//t.firstDuplicate(name);
+		t.allDuplicate(name);
+	}
+
+	private void allDuplicate(char[] name) {
+		// TODO Auto-generated method stub
+		int[] dup=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					dup[j]=-1;
+					count++;
+				}
+			}
+			if(dup[i]!=-1) {
+				dup[i]=count;
+			}
+		}
+		for(int i=0;i<dup.length;i++) {
+			//System.out.print(dup[i]+" ");
+			if(dup[i]==1) {
+				System.out.print(name[i]);
+			}
+		}
+		
+	}
+
+	private void firstDuplicate(char[] name) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<name.length-1;i++) {
+			char key=name[i];
+			boolean repeat=false;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					System.out.println(name[j]);
+					repeat=true;
+					break;
+				}
+			}
+			if(repeat==true) {
+				break;
+			}
+		}
 	}
 
 	private void secondSmallest() {
