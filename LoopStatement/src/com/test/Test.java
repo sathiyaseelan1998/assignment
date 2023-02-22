@@ -10,7 +10,7 @@ public class Test {
 		//t.secondBiggest();
 		//t.secondSmallest();
 		String str="sathiyaseelan";
-		char[] name=str.toCharArray();
+		//char[] name=str.toCharArray();
 		//t.firstDuplicate(name);
 		//t.allDuplicate(name);
 		//t.removeElement();
