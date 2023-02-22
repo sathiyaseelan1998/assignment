@@ -12,7 +12,58 @@ public class Test {
 		String str="sathiyaseelan";
 		char[] name=str.toCharArray();
 		//t.firstDuplicate(name);
-		t.allDuplicate(name);
+		//t.allDuplicate(name);
+		//t.removeElement();
+		//t.moveLeft();
+		t.moveRight();
+	}
+
+	private void moveRight() {
+		// TODO Auto-generated method stub
+		int[] ar= {10,20,30,40,50};
+		int temp=ar[ar.length-1];
+		int i;
+		for(i=ar.length-1;i>=1;i--) {
+			ar[i]=ar[i-1];
+		}
+		ar[i]=temp;
+		for(i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
+	}
+
+	private void moveLeft() {
+		// TODO Auto-generated method stub
+		int[] ar= {10,20,30,40,50};
+		int temp=ar[0];
+		int i;
+		for(i=0;i<ar.length-1;i++) {
+			ar[i]=ar[i+1];
+		}
+		ar[i]=temp;
+		for(i=0;i<ar.length;i++) {
+			System.out.print(ar[i]+" ");
+		}
+		
+	}
+
+	private void removeElement() {
+		// TODO Auto-generated method stub
+		int[] arr= {10,20,30,40,50};
+		int key=30;
+		int index=-1;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==key) {
+				index=i;
+				break;
+			}
+		}
+		for(int i=index;i<arr.length-1;i++) {
+			arr[i]=arr[i+1];
+		}
+		for(int i=0;i<arr.length-1;i++) {
+			System.out.println(arr[i]);
+		}
 	}
 
 	private void allDuplicate(char[] name) {
