@@ -17,7 +17,18 @@ public class Test {
 		//t.moveLeft();
 		//t.moveRight();
 		//t.multiDimensional();
-		t.jagged();
+		//t.jagged();
+		System.out.println(t.factorial(5));
+	}
+
+	private int factorial(int fact) {
+		// TODO Auto-generated method stub
+		if(fact==1) {
+			return 1;
+		}
+		else {
+			return fact*factorial(fact-1);
+		}
 	}
 
 	private void jagged() {
