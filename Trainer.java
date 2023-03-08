@@ -1,7 +1,7 @@
 class Trainer{
 
 String dept="Java";
-String institute="Payilagam";
+String institute="Qspider";
 private int salary=10000;
 Trainer(){
     System.out.println("Trainer Constructor");
