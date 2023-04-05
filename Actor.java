@@ -9,5 +9,4 @@ void act();
 void dance();
 
 void sing();
-
 }
