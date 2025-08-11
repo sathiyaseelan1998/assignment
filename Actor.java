@@ -1,6 +1,6 @@
 interface Actor{
 
-boolean makeUpRequired=true;
+boolean makeUpRequired=false;
 
 String address="chennai";
 
