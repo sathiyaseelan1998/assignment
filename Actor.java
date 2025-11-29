@@ -1,4 +1,4 @@
-interface Actor{
+interface Actor{ 
 
 boolean makeUpRequired=false; 
 
